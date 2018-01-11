@@ -11,6 +11,5 @@ deploy:
   secret_access_key:
     secure: hBx3i3SMy0DMD/c3hQkRhZJkiJ8C2QNH5dwAFz4BJNWq1DSWoTZhDNKDx6ZZn4Bsg2QoJ2ScOnh+YZiR3i5LLr3zt0wsJEoP+/meYalhFoLm7fdSQ6DJznYCK6aM7xmwgHEy3VrSQcwWgRveqlOaVS4nWsDSrvKgMObPO13H2xg/Kv1yqRWv4e4YXBXJx0rt6yQVzGS4AIcNjAsln20y/bLv6k3dNu6K/nO7fGC/MybvxXZ6chlVrkBjYy7a/LDo3z9g/FkL/2uUClGx5kvOKJ+gIGT9TBHpahKWf3AW/C5LZFsnPDqqDMYYUbkUMxS90EscxDrOwojXlTPNdM9oM9krjn0ifFnm1QaDuj763+tN/8fcs+pU0qK/+N4fN+6Lv0dki3N15TSbbjvIOCYEFnJH4IsUGhvQXez9VuHNf10JTIPbxyY8zW+/VhdrI4wD0en5ABAemgqfN3koyGirjh4RkDwoMl1/IIGyuKxzTt/+borKuTnUcAHVEc82y7CQVA7cxxmjlUscKZZFTtG/J07q7L1oSY/9Aq+jGLgfKvrJT+sEbxYpKqh+f2ZIIOfvh0oGPW1CZ7C7nqoZt0BhEWE+WCPKc2NOoTx3pCGQ8IiZd2MpRQDtzsahRlZofVJO3EZLy2BnL6XOjPQFAwO/dGOCew4sSaBuJhbR6zgfxD0=
   bucket: iccu-events-week
-  acl: ''
   on:
     repo: Imperial-CU/events-week-2018
