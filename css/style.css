@@ -2213,3 +2213,8 @@ section[data-section=menu] {
     padding-bottom: 10px;
   }
 }
+
+.event-pic {
+  width: 100%;
+  height: auto;
+}
