@@ -1,11 +1,16 @@
 language: python
 python:
-  - "2.7"
-
+- '2.7'
 script:
-  - ls
-
+- ls
+before_install:
+- openssl aes-256-cbc -K $encrypted_8d4fe0db8b7e_key -iv $encrypted_8d4fe0db8b7e_iv
+  -in iccu_rsa.enc -out ../.ssh/iccu_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/iccu_rsa
+- ssh-add /tmp/iccu_rsa
 deploy:
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR ubuntu@vps.iccu.co.uk:events-week-2018
   provider: s3
   access_key_id: AKIAJSLWEETR3G6IZNUQ
   secret_access_key:
