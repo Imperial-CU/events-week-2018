@@ -12,7 +12,7 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -e 'ssh -p 12345 -o StrictHostKeyChecking=no' -r --delete-after --quiet $TRAVIS_BUILD_DIR ubuntu@vps.iccu.co.uk:events-week-2018
+  script: rsync -e 'ssh -p 12345 -o StrictHostKeyChecking=no' -r --delete-after --quiet $TRAVIS_BUILD_DIR ubuntu@vps.iccu.co.uk:.
   on:
     branch: master
 #  provider: s3
