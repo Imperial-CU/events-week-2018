@@ -10,7 +10,11 @@ before_install:
 - chmod 600 /tmp/iccu_rsa
 - ssh-add /tmp/iccu_rsa
 deploy:
+  provider: script
+  skip_cleanup: true
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR ubuntu@vps.iccu.co.uk:events-week-2018
+  on:
+    branch: master
 #  provider: s3
 #  access_key_id: AKIAJSLWEETR3G6IZNUQ
 #  secret_access_key:
