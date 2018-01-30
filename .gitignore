@@ -1,0 +1,4 @@
+gulpfile.js
+*.DS_Store
+package.json
+README.txt
